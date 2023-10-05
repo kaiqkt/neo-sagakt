@@ -8,9 +8,7 @@ public class Orchestrator(
 
     private val logger = LoggerFactory.getLogger(this::class.java)
 
-    init {
-        service.subscribe(::onReceive)
-    }
+    init { service.subscribe(::onReceive) }
 
     public fun start(id: String, node: Node, context: Map<String, Any>) {
         logger.info("Execute orchestration id $id")
