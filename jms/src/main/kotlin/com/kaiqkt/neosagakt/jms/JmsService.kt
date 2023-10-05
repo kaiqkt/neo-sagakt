@@ -64,7 +64,6 @@ public class JmsService(
 
     private fun ByteArray.toByteMessages(): BytesMessage = session.createBytesMessage().also { it.writeBytes(this) }
 
-
     override fun unsubscribe() {
         consumers?.map { it.close() }
     }
