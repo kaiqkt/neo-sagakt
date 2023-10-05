@@ -2,7 +2,6 @@ package com.kaiqkt.neosagakt.builder
 
 import com.kaiqkt.neosagakt.core.Node
 
-
 public fun saga(
     actionsAndCompensations: List<Pair<NodeConfig, NodeConfig?>>,
     incompensableActions: List<NodeConfig> = emptyList()
